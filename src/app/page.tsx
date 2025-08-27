@@ -43,36 +43,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <motion.header
-        className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-lg border-b border-white/10 shadow-lg"
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <motion.div
-            className="relative"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            <h1 className="text-2xl font-playfair font-bold tracking-tight text-white">ZYKUS</h1>
-          </motion.div>
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#collections" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
-              Collections
-            </a>
-            <a href="#about" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
-              About
-            </a>
-            <a href="#contact" className="text-sm font-medium text-white/90 hover:text-white transition-colors">
-              Contact
-            </a>
-          </nav>
-        </div>
-      </motion.header>
-
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <motion.div className="absolute inset-0 z-0" style={{ y: heroY }}>
